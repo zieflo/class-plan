@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Plans from '@/components/Plans'
 import Class from '@/components/Class'
+import Account from '@/components/Account'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/classes',
       name: 'Class',
       component: Class,
+    },
+    {
+      path: '/account',
+      name: 'Account',
+      component: Account,
     }
   ]
 })

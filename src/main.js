@@ -8,9 +8,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import VueLodash from 'vue-lodash'
 
-Vue.use(VueAxios, axios)
-Vue.prototype.$axios = axios
+Vue.use(VueLodash);
+Vue.use(VueAxios, axios);
+Vue.prototype.$axios = axios;
 Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false
