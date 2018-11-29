@@ -2,10 +2,15 @@
     <b-container class="pt-4">
         <b-row>
             <b-col v-for="plan in plans" :key="plan.id">
-                <b-card :title="plan.title" :img-src="plan.img" class="d-flex mb-4">
-                    <p class="card-text">{{ plan.description }}</p>
-                </b-card>
+                <a v-b-modal.modal1 class="btn-a" @click="activeImageUrl = plan.img">
+                    <b-card :title="plan.title" :img-src="plan.img" class="d-flex mb-4">
+                        <p class="card-text">{{ plan.description }}</p>
+                    </b-card>
+                </a>
             </b-col>
+            <b-modal id="modal1">
+                <img :src="activeImageUrl"/>
+            </b-modal>
         </b-row>
     </b-container>
 </template>
@@ -15,6 +20,7 @@ export default {
     name: 'Plans',
     data() {
         return {
+            activeImageUrl: null,
             plans: [
                 {
                     id: 1,
@@ -72,5 +78,21 @@ export default {
     .card-body {
         max-height: 30px;
     }
+}
+
+.btn-a {
+    :hover {
+        cursor: pointer;
+    }
+}
+
+.modal-content {
+    width: 800px;
+    height: 600px;
+    margin-left: -150px;
+}
+
+.modal-footer {
+    display: none;
 }
 </style>

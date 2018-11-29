@@ -1,5 +1,5 @@
 <template>
-     <b-container>
+     <b-container class="account">
         <b-row>
             <b-col class="mt-5">
                 <b-jumbotron header="Profil enseignant"></b-jumbotron>
@@ -48,15 +48,24 @@ export default {
 <style lang="scss">
 @import '../assets/main.scss';
 
-h1 {
-    color: white;
-    font-size: 3rem !important;
-    text-align: center;
-    margin-top: -25px;
+
+.account {
+    .jumbotron {
+        background-color: $light-primary;
+        height: 50px;
+    }
+
+    h1 {
+        color: white;
+        font-size: 3rem !important;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .card {
+        width: 100%;
+        height: 100px;
+    }
 }
 
-.jumbotron {
-    background-color: $light-primary;
-    height: 50px;
-}
 </style>
