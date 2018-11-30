@@ -26,34 +26,37 @@ export default {
                     id: 1,
                     img: '../static/img/plan1.jpg',
                     title: "Plan 1",
-                    description: "Plan 1, matière : SVT, bat B classe 2",
+                    description: "Plan 1, matière : SVT, bat B 4ième1",
                 },
                 {
                     id: 2,
                     img: '../static/img/plan2.jpg',
                     title: "Plan 2",
-                    description: "Plan 1, matière : Anglais, bat A classe 3",
+                    description: "Plan 1, matière : Anglais, bat A 4ième2",
                 },
                 {
                     id: 3,
                     img: '../static/img/plan2.jpg',
                     title: "Plan 3",
-                    description: "Plan 2 \n, matière : Anglais, bat A classe 3",
+                    description: "Plan 2 \n, matière : Anglais, bat A 6ième1",
                 },
                 {
                     id: 4,
                     img: '../static/img/plan2.jpg',
                     title: "Plan 4",
+                    description: "Plan 2 \n, matière : Arts plastiques, bat C 6ième1",
                 },
                 {
                     id: 5,
                     img: '../static/img/plan1.jpg',
                     title: "Plan 5",
+                    description: "Plan 1 \n, matière : Maths, bat D 4ième1",
                 },
                 {
                     id: 6,
                     img: '../static/img/plan1.jpg',
                     title: "Plan 6",
+                    description: "Plan 1 \n, matière : Physique, bat D 4ième2",
                 },
             ]
         };
